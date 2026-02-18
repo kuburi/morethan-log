@@ -14,7 +14,7 @@ import { TPosts } from "src/types"
 export const getPosts = async () => {
   let id = CONFIG.notionConfig.pageId as string
   const api = new NotionAPI({
-apiBaseUrl: "https://tiny-cucumber-590.notion.site/api/v3" //your domain
+apiBaseUrl: "https://kuburi.notion.site/api/v3" //your domain
 })
 
   const response = await api.getPage(id)
